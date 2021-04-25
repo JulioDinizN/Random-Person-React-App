@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --purple: #a239ca;
+  --blue: #4717f3;
+  --black: #0e0b16;
+  --white: #eaeaea;
+  --darker-white: #e4e3e3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+h2 {
+  font-family: "GlacialIndifferenceRegular";
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-image: url(background.jpeg);
 }
 
-.App-link {
-  color: #61dafb;
+.Card {
+  min-width: 1000px;
+  min-height: 600px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Left-container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-right: 50px;
+}
+
+.Left-container button {
+  position: relative;
+  top: 100px;
+  left: 40px;
+}
+
+.Right-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  gap: 20px;
+}
+
+.Name {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Name p {
+  margin-top: 5px;
+  background: var(--darker-white);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.Location {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Location p {
+  margin-top: 5px;
+  background: var(--darker-white);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.Age {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Age p {
+  margin-top: 5px;
+  background: var(--darker-white);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.Email {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Email p {
+  margin-top: 5px;
+  background: var(--darker-white);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.Gender {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Gender p {
+  margin-top: 5px;
+  background: var(--darker-white);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.Cell-phone {
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Cell-phone p {
+  margin-top: 5px;
+  background: var(--darker-white);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.Profile-picture {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 150px;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+}
+
+button {
+  border-radius: 5px;
+  box-shadow: none;
 }
