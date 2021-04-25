@@ -29,27 +29,27 @@ const Main = () => {
           <div className="PurpleBall" />
           <div className="BlackFigure" />
 
-          <div className="Name">
+          <div>
             <h2>Nome</h2>
             <p>{`${item.name.first} ${item.name.last}`}</p>
           </div>
 
-          <div className="Location">
+          <div>
             <h2>Localização</h2>
             <p>{`${item.location.city} - ${item.location.state}, ${item.location.country}`}</p>
           </div>
 
-          <div className="Age">
+          <div>
             <h2>Idade</h2>
             <p>{item.dob.age} Anos</p>
           </div>
 
-          <div className="Email">
+          <div>
             <h2>E-mail</h2>
             <p> {item.email}</p>
           </div>
 
-          <div className="Gender">
+          <div>
             <h2>Gênero</h2>
             <p>{item.gender === "female" ? "Female" : "Male"}</p>
           </div>
@@ -58,7 +58,7 @@ const Main = () => {
             <button onClick={getUser}>Gerar Nova Pessoa</button>
           </div>
 
-          <div className="Cellphone">
+          <div>
             <h2>Telefone</h2>
             <p>{item.cell}</p>
           </div>
