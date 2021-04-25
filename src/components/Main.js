@@ -21,41 +21,46 @@ const Main = () => {
     <>
       {userData.map((item) => (
         <div className="Card" key={item.login.uuid}>
-          <div className="Left-container">
-            <div className="Profile-picture">
-              <img src={item.picture.large} alt="foto de perfil" />
-            </div>
-            <div>
-              <button onClick={getUser}>Gerar Nova Pessoa</button>
-            </div>
+          <div className="Image">
+            <img src={item.picture.large} alt="foto de perfil" />
           </div>
 
-          <div className="Right-container">
-            <div className="Name">
-              <h2>Nome</h2>
-              <p>{`${item.name.first} ${item.name.last}`}</p>
-            </div>
-            <div className="Location">
-              <h2>Localização</h2>
-              <p>{`${item.location.city} - ${item.location.state}, ${item.location.country}`}</p>
-            </div>
-            <div className="Age">
-              <h2>Idade</h2>
-              <p>{item.dob.age} Anos</p>
-            </div>
+          <div className="BlueBall" />
+          <div className="PurpleBall" />
+          <div className="BlackFigure" />
 
-            <div className="Email">
-              <h2>Email</h2>
-              <p> {item.email}</p>
-            </div>
-            <div className="Gender">
-              <h2>Gênero</h2>
-              <p>{item.gender === "female" ? "Female" : "Male"}</p>
-            </div>
-            <div className="Cell-phone">
-              <h2>Telefone</h2>
-              <p>{item.cell}</p>
-            </div>
+          <div className="Name">
+            <h2>Nome</h2>
+            <p>{`${item.name.first} ${item.name.last}`}</p>
+          </div>
+
+          <div className="Location">
+            <h2>Localização</h2>
+            <p>{`${item.location.city} - ${item.location.state}, ${item.location.country}`}</p>
+          </div>
+
+          <div className="Age">
+            <h2>Idade</h2>
+            <p>{item.dob.age} Anos</p>
+          </div>
+
+          <div className="Email">
+            <h2>E-mail</h2>
+            <p> {item.email}</p>
+          </div>
+
+          <div className="Gender">
+            <h2>Gênero</h2>
+            <p>{item.gender === "female" ? "Female" : "Male"}</p>
+          </div>
+
+          <div className="Button">
+            <button onClick={getUser}>Gerar Nova Pessoa</button>
+          </div>
+
+          <div className="Cellphone">
+            <h2>Telefone</h2>
+            <p>{item.cell}</p>
           </div>
         </div>
       ))}
