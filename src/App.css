@@ -96,38 +96,3 @@ button:active {
   position: relative;
   top: 1px;
 }
-
-.BlueBall {
-  position: absolute;
-  background: var(--blue);
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  left: 200px;
-  top: 100px;
-  z-index: 3;
-}
-.PurpleBall {
-  position: absolute;
-  background: var(--purple);
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  left: 160px;
-  top: 105px;
-  z-index: 2;
-}
-.BlackFigure {
-  position: absolute;
-  background: var(--black);
-  width: 235px;
-  height: 100px;
-  border-radius: 30px;
-  left: 150px;
-  top: 170px;
-  z-index: 1;
-  transform: rotate(20deg);
-  border-top-right-radius: 90px;
-  border-bottom-right-radius: 70px;
-}

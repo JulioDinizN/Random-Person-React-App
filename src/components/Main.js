@@ -25,10 +25,6 @@ const Main = () => {
             <img src={item.picture.large} alt="foto de perfil" />
           </div>
 
-          <div className="BlueBall" />
-          <div className="PurpleBall" />
-          <div className="BlackFigure" />
-
           <div>
             <h2>Nome</h2>
             <p>{`${item.name.first} ${item.name.last}`}</p>
